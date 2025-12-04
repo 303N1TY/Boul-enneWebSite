@@ -113,14 +113,12 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px; /* Reduced height for sleek look */
-    background: rgba(251, 251, 253, 0.8);
+    background: rgba(251, 251, 253, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 1000;
     border-bottom: 1px solid rgba(0,0,0,0.05);
-    display: flex;
-    align-items: center;
+    padding: 15px 0;
 }
 
 .nav-container {
@@ -133,19 +131,25 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-weight: 600;
-    font-size: 18px;
+    gap: 18px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text-main);
 }
 
 .logo img {
-    height: 30px;
+    height: 85px;
     width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 35px;
     align-items: center;
 }
 
@@ -199,7 +203,7 @@ img {
 
 /* Hero Section */
 .hero {
-    padding-top: 120px;
+    padding-top: 130px;
     padding-bottom: 80px;
     text-align: center;
     min-height: 90vh;
@@ -688,7 +692,7 @@ footer {
     .nav-links {
         display: none;
         position: absolute;
-        top: 60px;
+        top: 115px;
         left: 0;
         width: 100%;
         background: var(--bg-color);
@@ -819,11 +823,11 @@ footer {
     }
     
     .logo span {
-        font-size: 14px;
+        font-size: 18px;
     }
     
     .logo img {
-        height: 25px;
+        height: 55px;
     }
     
     .hero {
